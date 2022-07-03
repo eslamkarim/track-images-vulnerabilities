@@ -1,0 +1,13 @@
+
+name: build
+on:
+  schedule:
+  - cron: "*/5 * * * *"
+jobs:
+  scan:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - shell: bash
+        run: |
+          ls
